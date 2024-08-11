@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ChartMeta" load_steps=12 format=3 uid="uid://bhst4rvssmgah"]
+
+[ext_resource type="PackedScene" uid="uid://bc6bkwlvdvn5k" path="res://game/characters/bf.tscn" id="1_1qssy"]
+[ext_resource type="PackedScene" uid="uid://dlllva83qr6o3" path="res://game/characters/hex-g.tscn" id="1_04n5n"]
+[ext_resource type="Script" path="res://game/chart/ChartMeta.gd" id="1_j7mbi"]
+[ext_resource type="Script" path="res://game/events/Event.gd" id="2_do68c"]
+[ext_resource type="PackedScene" uid="uid://crug6d4btxa1m" path="res://game/hud/kade.tscn" id="3_7g3xi"]
+[ext_resource type="AudioStream" uid="uid://cfksu115rd4fl" path="res://assets/songs/glitcher/Inst.ogg" id="4_6nx5l"]
+[ext_resource type="Script" path="res://game/player/data/player_config.gd" id="5_gerk8"]
+[ext_resource type="PackedScene" uid="uid://cyd7777vg0jb3" path="res://game/stages/stage.tscn" id="7_dcb23"]
+[ext_resource type="AudioStream" uid="uid://c34tuswknj2je" path="res://assets/songs/glitcher/Voices.ogg" id="12_4bcko"]
+
+[sub_resource type="Resource" id="Resource_1oaoc"]
+script = ExtResource("5_gerk8")
+has_input = false
+autoplay = true
+
+[sub_resource type="Resource" id="Resource_4fwft"]
+script = ExtResource("5_gerk8")
+has_input = true
+autoplay = false
+
+[resource]
+script = ExtResource("1_j7mbi")
+inst = ExtResource("4_6nx5l")
+voices = Array[AudioStream]([ExtResource("12_4bcko")])
+cpu_character = ExtResource("1_04n5n")
+player_character = ExtResource("1_1qssy")
+song_scripts = Array[Script]([])
+script_packs = Array[Script]([])
+events = Array[ExtResource("2_do68c")]([])
+format = 0
+stage = ExtResource("7_dcb23")
+players = Array[ExtResource("5_gerk8")]([SubResource("Resource_1oaoc"), SubResource("Resource_4fwft")])
+hud = ExtResource("3_7g3xi")
