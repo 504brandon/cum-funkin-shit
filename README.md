@@ -5,6 +5,7 @@ all im doing is just modding it and having fun with it and maybe hoping he adds 
 # Things i did so far
 Made a KE Hud
 Made a hud with a TimeBar
+Added a keybind to instantly exit a song
 
 # Things i plan to do
 Add more options
