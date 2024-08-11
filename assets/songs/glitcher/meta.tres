@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="ChartMeta" load_steps=12 format=3 uid="uid://bhst4rvssmgah"]
+[gd_resource type="Resource" script_class="ChartMeta" load_steps=13 format=3 uid="uid://bhst4rvssmgah"]
 
 [ext_resource type="PackedScene" uid="uid://bc6bkwlvdvn5k" path="res://game/characters/bf.tscn" id="1_1qssy"]
 [ext_resource type="PackedScene" uid="uid://dlllva83qr6o3" path="res://game/characters/hex-g.tscn" id="1_04n5n"]
@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://cfksu115rd4fl" path="res://assets/songs/glitcher/Inst.ogg" id="4_6nx5l"]
 [ext_resource type="Script" path="res://game/player/data/player_config.gd" id="5_gerk8"]
 [ext_resource type="PackedScene" uid="uid://cyd7777vg0jb3" path="res://game/stages/stage.tscn" id="7_dcb23"]
+[ext_resource type="Script" path="res://assets/songs/default_song_scripts/pause.gd" id="8_qamy2"]
 [ext_resource type="AudioStream" uid="uid://c34tuswknj2je" path="res://assets/songs/glitcher/Voices.ogg" id="12_4bcko"]
 
 [sub_resource type="Resource" id="Resource_1oaoc"]
@@ -26,7 +27,7 @@ inst = ExtResource("4_6nx5l")
 voices = Array[AudioStream]([ExtResource("12_4bcko")])
 cpu_character = ExtResource("1_04n5n")
 player_character = ExtResource("1_1qssy")
-song_scripts = Array[Script]([])
+song_scripts = Array[Script]([ExtResource("8_qamy2")])
 script_packs = Array[Script]([])
 events = Array[ExtResource("2_do68c")]([])
 format = 0

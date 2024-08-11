@@ -42,7 +42,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_down"):
 		change_item(1)
 	if Input.is_action_just_pressed("ui_up"):
-		change_item(1)
+		change_item(-1)
 	if Input.is_action_just_pressed("ui_accept"):
 		select_song()
 	if Input.is_action_just_pressed("ui_cancel"):
